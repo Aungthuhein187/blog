@@ -24,3 +24,15 @@ Route::get("/articles", [ArticleController::class, 'index']);
 Route::get("/articles/{id}", [ArticleController::class, 'details']);
 
 Route::get("/products", [ProductController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

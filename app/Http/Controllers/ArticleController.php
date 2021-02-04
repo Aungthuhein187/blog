@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use \App\Models\Article;
+
 class ArticleController extends Controller
 {
     public function index(): string
     {
-        $data = [
-            ["id" => 1, "title" => "First article"],
-            ["id" => 2, "title" => "Second article"],
-        ];
+        $data = Article::all();
+
         return view("articles.index", ["articles" => $data]);
     }
 
