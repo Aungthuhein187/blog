@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get("/", [ArticleController::class, 'index']);
 Route::get("/articles", [ArticleController::class, 'index']);
-Route::get("/articles/{id}", [ArticleController::class, 'details']);
+Route::get("/articles/detail/{id}", [ArticleController::class, 'detail']);
 
 Route::get("/products", [ProductController::class, 'index']);
 
